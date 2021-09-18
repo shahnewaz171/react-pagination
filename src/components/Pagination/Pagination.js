@@ -6,7 +6,6 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     for (let i = 1; i < Math.ceil(totalPosts / postsPerPage); i++) {
         pageNumbers.push(i);
     }
-    console.log(pageNumbers)
 
     return (
         <>
@@ -15,7 +14,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
                     {pageNumbers.map(number => (
                         <li key={number} className="page-item" >
                             <a onClick={() => paginate(number)} href="!#" className="page-link">
-                                    {number}
+                                {number}
                             </a>
                         </li>
                     ))}

@@ -10,7 +10,9 @@ const Posts = ({posts, loading}) => {
         <>
             <ul className="mb-4">
                 {posts.map(post => (
-                    <li key={post.id}>{post.title}</li>
+                    <li key={post.id} className="tw-border tw-p-1" >
+                        {post.title}
+                    </li>
                 ))
                 }
             </ul>

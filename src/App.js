@@ -24,7 +24,6 @@ function App() {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  console.log(currentPosts);
   
   // Change page number
   const paginate = (pageNumber) => {
@@ -34,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <div className="tw-container tw-ml-10 tw-mt-14">
-        <h1 className="tw-text-green-800 tw-mb-8">My Blogs</h1>
+        <h1 className="tw-text-green-800 tw-mb-8 tw-text-3xl tw-font-semibold">My Blogs</h1>
         <Posts posts={currentPosts} loading={loading} />
         <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
       </div>

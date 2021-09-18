@@ -1,0 +1,11 @@
+/* .page-item{
+    border: 1px solid blue;
+} */
+.page-link{
+    border: 1px solid gray;
+    padding: 2px 8px;
+    color: rgb(47, 0, 255);
+}
+.page-link:hover{
+    background-color: rgb(218, 217, 217);
+}
